@@ -20,7 +20,6 @@ public class SplashActivity extends AppCompatActivity {
         ImageView splashImage = findViewById(R.id.splashImage);
         TextView splashText = findViewById(R.id.splashText);
 
-        // Initial fade in and rotate animation for image
         splashImage.animate()
                 .alpha(1f)
                 .scaleX(1.2f)
@@ -29,7 +28,6 @@ public class SplashActivity extends AppCompatActivity {
                 .setDuration(2000)
                 .setInterpolator(new AccelerateDecelerateInterpolator());
 
-        // Bounce animation for text
         new Handler().postDelayed(() -> {
             splashText.animate()
                     .alpha(1f)
@@ -44,7 +42,6 @@ public class SplashActivity extends AppCompatActivity {
                     .start();
         }, 1000);
 
-        // Pulse animation sequence
         new Handler().postDelayed(() -> {
             splashImage.animate()
                     .scaleX(1f)
@@ -60,7 +57,6 @@ public class SplashActivity extends AppCompatActivity {
                     .start();
         }, 2000);
 
-        // Start MainActivity with fade transition
         new Handler().postDelayed(() -> {
             startActivity(new Intent(SplashActivity.this, MainActivity.class));
             finish();
