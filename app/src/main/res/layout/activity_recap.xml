@@ -34,7 +34,6 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <!-- Nom Section -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -64,7 +63,6 @@
                     android:background="#E0E0E0"
                     android:layout_marginBottom="16dp"/>
 
-                <!-- Email Section -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -93,7 +91,6 @@
                     android:background="#E0E0E0"
                     android:layout_marginBottom="16dp"/>
 
-                <!-- Phone Section -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -122,7 +119,6 @@
                     android:background="#E0E0E0"
                     android:layout_marginBottom="16dp"/>
 
-                <!-- Address Section -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -151,7 +147,6 @@
                     android:background="#E0E0E0"
                     android:layout_marginBottom="16dp"/>
 
-                <!-- City Section -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
