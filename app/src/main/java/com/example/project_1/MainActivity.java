@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         spinnerVille = findViewById(R.id.spinnerVille);
         btnEnvoyer = findViewById(R.id.btnEnvoyer);
 
-        // Remplir le Spinner avec des villes
         String[] villes = {"Agadir", "Casablanca", "Marrakech", "Rabat", "Tanger"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, villes);
         spinnerVille.setAdapter(adapter);
@@ -38,14 +37,12 @@ public class MainActivity extends AppCompatActivity {
         btnEnvoyer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Récupérer les valeurs saisies
                 String nom = etNom.getText().toString();
                 String email = etEmail.getText().toString();
                 String phone = etPhone.getText().toString();
                 String adresse = etAdresse.getText().toString();
                 String ville = spinnerVille.getSelectedItem().toString();
 
-                // Envoyer les données à la deuxième activité
                 Intent intent = new Intent(MainActivity.this, com.example.project_1.RecapActivity.class);
                 intent.putExtra("NOM", nom);
                 intent.putExtra("EMAIL", email);
