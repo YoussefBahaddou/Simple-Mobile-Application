@@ -18,7 +18,6 @@ public class RecapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recap);
 
-        // Initialize TextViews
         tvNom = findViewById(R.id.tvNom);
         tvEmail = findViewById(R.id.tvEmail);
         tvPhone = findViewById(R.id.tvPhone);
@@ -26,21 +25,18 @@ public class RecapActivity extends AppCompatActivity {
         tvVille = findViewById(R.id.tvVille);
         btnGoogle = findViewById(R.id.btnGoogle);
 
-        // Get data from intent
         String nom = getIntent().getStringExtra("NOM");
         String email = getIntent().getStringExtra("EMAIL");
         String phone = getIntent().getStringExtra("PHONE");
         String adresse = getIntent().getStringExtra("ADRESSE");
         String ville = getIntent().getStringExtra("VILLE");
 
-        // Set the data
         tvNom.setText(nom);
         tvEmail.setText(email);
         tvPhone.setText(phone);
         tvAdresse.setText(adresse);
         tvVille.setText(ville);
 
-        // Set up Google button click listener
         btnGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
