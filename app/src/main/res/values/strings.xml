@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bienvenue </string>
+    <string name="form_title">Inscription à la Formation</string>
+    <string name="hint_nom">Nom &amp; Prénom</string>
+    <string name="hint_email">Adresse Email</string>
+    <string name="hint_phone">Numéro de Téléphone</string>
+    <string name="hint_adresse">Adresse Complète</string>
+    <string name="btn_envoyer">Soumettre l\'inscription</string>
+    <string name="btn_visit_google">Visitez Google</string>
+</resources>
